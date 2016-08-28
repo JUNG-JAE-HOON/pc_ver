@@ -1,0 +1,440 @@
+// 미디어쿼리
+/*미디리쿼리*/
+// @import url("media415.scss");
+
+
+// 공통 css
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+hr {
+  border-color: #F05F40;
+  border-width: 3px;
+  max-width: 50px;
+  &.light {
+    border-color: white;
+  }
+}
+
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #F05F40;
+  &:hover, &:focus {
+    color: #eb3812;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bg-primary {
+  background-color: #F05F40;
+}
+
+.bg-dark {
+  background-color: #222222;
+  color: white;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+  padding: 10px 0;
+}
+
+aside {
+  padding: 50px 0;
+}
+
+$rp_color:#ff8747;
+
+.noPadding {
+  padding: 0 !important;
+}
+.noConner{
+  border-radius:0;
+}
+.under_line{
+  border-bottom:2px solid black;
+}
+.noMargin{
+  margin:0 0 0 0;
+}
+.conner10{border-radius:10px}
+.conner50{border-radius:50px}
+.red{background-color: red; margin-right:10px}
+.green{background-color: green; margin-right:10px}
+.status{color:white; font-size: 8px; padding:2px 5px;}
+
+
+.fs10{font-size: 10px !important}
+.inline{
+  display: inline-block;
+}
+
+
+.navbar-default {
+  background-color: white;
+  border-color: rgba(34, 34, 34, 0.05);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  .navbar-header {
+    .navbar-brand {
+      color: black;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover, &:focus {
+        color: #eb3812;
+      }
+    
+    }
+    .navbar-toggle {
+      font-weight: 700;
+      font-size: 12px;
+      color: #222222;
+      text-transform: uppercase;
+    }
+  }
+  .nav > li {
+    > a {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      color: #222222;
+      &:focus {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: #222222;
+      }
+      &:hover, &:focus:hover {
+        color: #F05F40;
+      }
+    }
+    &.active > a {
+      color: #F05F40 !important;
+      background-color: transparent;
+      &:focus {
+        color: #F05F40 !important;
+        background-color: transparent;
+      }
+      &:hover, &:focus:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+#mapSection{
+  font-size:10px;
+  padding:0 0 0 0;
+  .listWrap{
+    height: 350px; 
+    overflow-y:scroll;    
+
+    .addr_ul{
+      padding:5px !important; 
+    }
+    .addr_list{
+      padding:5px !important;
+      width:100%;
+      list-style:none; 
+      border:1px solid #ccc; 
+      margin-bottom:5px;
+      position:relative;
+      li{
+        list-style:none;
+        &:nth-child(1){
+          margin-bottom: 5px;
+        
+        }
+      }
+      .rateYo{
+        padding:0 0 0 10px;
+      }
+      .list-tlt{
+        color:$rp_color;
+        vertical-align: middle;
+        font-size:1.5em !important;
+        margin:0 0 0 0;
+      }
+    }
+    .contWrap{
+      padding:0 0 0 10px;
+      .list_content{
+        font-size:8px !important;
+        padding:none;
+        margin:0 0 0 0;
+      }
+    }
+    .list_title{
+      font-size:10px !important;
+      width:100%;
+      background-color: $rp_color;
+      color:white;
+      font-weight:normal !important;
+      padding:10px !important;
+      font-size: 2em;
+      &:nth-child(2){
+        background-color:grey;
+      }
+    }
+   
+  }
+  
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  // background-image: url('../img/header.jpg');
+  text-align: center;
+  color: #ff8747;
+  .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+    .header-content-inner {
+      h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      hr {
+        margin: 30px auto;
+      }
+      p {
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+
+
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}
+
+::-moz-selection, ::selection {
+  color: white;
+  text-shadow: none;
+  background: #222222;
+}
+
+img {
+  &::selection, &::-moz-selection {
+    color: white;
+    background: transparent;
+  }
+}
+
+body {
+  webkit-tap-highlight-color: #222222;
+}
+ 
+
+    // 위에서 옮겨온 내용    
+   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    .project-category {
+      font-size: 16px;
+    }
+    .project-name {
+      font-size: 22px;
+    }
+  }
+  // 스와이
+  .swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+         div {
+        float:left;
+        width:100%;
+        position: relative;
+      }
+    }
+  }
+
+  .navbar-default {
+    // 스크롤시 gnb 배경 투명
+    // background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+      .logo{
+      margin-left: 50px !important;
+      }
+    .navbar-header .navbar-brand {
+      color: black;
+      &:hover, &:focus {
+        color: #ff8747;
+      }
+    }
+    .nav > li > a {
+      color: rgba(255, 255, 255, 0.7);
+      &:focus {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      &:hover, &:focus:hover {
+        color: white;
+      }
+    }
+    &.affix {
+      background-color: white;
+      border-color: rgba(34, 34, 34, 0.05);
+      .navbar-header .navbar-brand {
+        color: black;
+        font-size: 14px;
+        &:hover, &:focus {
+          color: #eb3812;
+        }
+      }
+      .nav > li > a {
+        color: #222222;
+        &:focus {
+          color: #222222;
+        }
+        &:hover, &:focus:hover {
+          color: #F05F40;
+        }
+      }
+    }
+  }
+.gnb{
+  .gnb_ul{
+    width:60%;
+    margin:5px 0 0 10px;
+    .gnb_li{
+
+      &:nth-child(6){
+        margin-right: 10px;
+        a{
+          color:$rp_color;
+        }
+      }
+       &:nth-child(7){
+        a{
+          background-color: $rp_color;
+          color:white;
+        }
+      }
+      text-align: center;
+      padding:15px 0;
+      &:first-child{
+        width:15%;
+      }
+      width:10%;
+      .gnb_btn{
+        color:black;
+        font-size:12px;
+      }
+    }
+    .sign_li{
+      padding:13px 0 !important;
+     a{
+      border:2px solid $rp_color;
+     }
+    }
+    
+  }
+  // 슬라이드
+}
+
+// 맵섹션
+
+.info_market{
+  background-color: $rp_color;
+  .info_tlt{
+    color:white;
+    font-size: 2em;
+    span{
+      vertical-align: middle;
+      display: inline-block;
+      margin-bottom:5px;
+    }
+  }
+  .circle{
+    width:60%;
+    margin:0 auto;
+    padding:20px; 
+    border:2px solid white;
+    text-align: center;
+    color:white;
+    font-size:2em;
+    a{
+      color:white;
+      text-decoration:none;
+    }
+  }
+}
+
+// 하단 메뉴
+.botArea{
+  padding:0 0 0 0;
+  border-bottom:1px solid #ccc;
+  .bot_menu{
+    text-align: center !important;
+    padding:1em 0;
+    font-size:14px;
+    border-right:1px solid #ccc;
+    &:first-child{
+    border-left:1px solid #ccc;
+
+    }
+    &:last-child{
+      color:$rp_color;
+    }
+  }
+}
+
+
+.footer{
+  text-align: center;
+  padding:5em 0;
+  address{
+    text-align:left;
+  }
+}
